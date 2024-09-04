@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #111;
+    color: #eee;
+    margin: 0;
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header */
+.site-header {
+    background: #151515;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.logo h1 {
+    color: #fff;
+    margin: 0;
+}
+
+.logo p {
+    color: #888;
+}
+
+.site-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.site-nav ul {
+    display: flex;
+}
+
+.site-nav ul.active {
+    display: flex;
+}
+
+.site-nav ul {
+    display: flex;
+}
+
+.site-nav ul.active {
+    display: flex;
+}
+
+.site-nav ul li {
+    list-style: none;
+}
+
+.site-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+.site-nav a:hover {
+    color: #00aced;
+}
+
+header button i {
+    display: none;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #282828, #121212);
+    padding: 60px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background: #00aced;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #0084b4;
+}
+
+/* Main Content */
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content {
+    flex: 1;
+    height: 500px;
+    padding: 20px;
+    overflow-y: auto; /* Scroll hanya di desktop */
+}
+
+.blog-post {
+    background: #1a1a1a;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.blog-post h2 {
+    color: #fff;
+}
+
+.blog-post p {
+    color: #aaa;
+    margin: 10px 0;
+}
+
+.post-meta a {
+    color: #00aced;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #00aced;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Sidebar */
+.sidebar {
+    margin-left: 20px;
+    flex: 1;
+}
+
+.sidebar h3 {
+    color: #00aced;
+    margin-bottom: 10px;
+}
+
+.sidebar p, .sidebar ul {
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar ul li a {
+    color: #00aced;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-media a {
+    color: #00aced;
+    font-size: 24px;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #fff;
+}
+
+/* Footer */
+.site-footer {
+    background: #151515;
+    padding: 20px 0;
+    text-align: center;
+    color: #888;
+}
+
+.site-footer a {
+    color: #00aced;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries */
+@media(max-width: 768px) {
+    .nav-toggle {
+        display: block;
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 24px;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        transition: transform 0.3s ease;
+        z-index: 10;
+    }
+
+    .nav-toggle.open {
+        transform: rotate(90deg);
+    }
+
+    .site-nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #151515;
+        padding: 20px;
+        border-radius: 10px;
+        width: 90%;
+    }
+
+    .site-nav ul.active {
+        display: flex;
+    }
+
+    .site-nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .content {
+        overflow: hidden; /* Menghilangkan scroll pada konten di mobile */
+        padding: 20px 0;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media(min-width: 769px) {
+    .nav-toggle {
+        display: none;
+    }
+
+    .content {
+        overflow-y: auto; /* Scroll hanya di desktop */
+    }
+}

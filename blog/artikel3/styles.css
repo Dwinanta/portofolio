@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f1f1f;
+}
+
+h1 {
+    font-size: 36px;
+    color: #00aced;
+}
+
+p {
+    font-size: 18px;
+}
+
+.detail-article {
+    padding: 20px;
+    background-color: #2a2a2a;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.interaction {
+    text-align: center;
+    margin: 20px;
+}
+
+.like-unlike {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.like-unlike button {
+    background-color: transparent;
+    border: none;
+    color: #00aced;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.like-unlike button:hover {
+    transform: scale(1.2);
+}
+
+#comments {
+    margin: 20px;
+}
+
+.comment-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: auto;
+    margin-bottom: 20px;
+}
+
+.comment-box textarea {
+    width: 100%;
+    height: 100px;
+    background-color: #333;
+    border: 1px solid #555;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    resize: none;
+}
+
+.comment-box button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #00aced;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.comment-box button:hover {
+    background-color: #0084b4;
+}
+
+#comment-section {
+    max-width: 500px;
+}
+
+.comment {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.comment .comment-text {
+    margin-bottom: 10px;
+}
+
+.comment .comment-author {
+    font-weight: bold;
+}
+
+.comment .delete-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    color: #ff4c4c;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1f1f1f;
+}
+@media (max-width:769px){
+    .detail-article img{
+        height: 200px;
+        width: 100%;
+    }
+}
+@media (min-width:1024px){
+    img{
+        align-items: center ;
+        width: 100%;
+        height: 400px;
+    }   
+}

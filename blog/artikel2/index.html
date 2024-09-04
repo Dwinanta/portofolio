@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Artikel - Nama Blog Anda</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Seni Menyeimbangkan Desain dan Kode</p>
+    </header>
+
+    <article class="detail-article">
+        <img src="Leonardo_Phoenix_A_modern_dualscene_illustration_showing_the_b_1.jpg" alt="">
+        <p>Mengeksplorasi pentingnya menyeimbangkan estetika dengan fungsionalitas dalam pengembangan web merupakan tantangan yang sering dihadapi oleh para desainer dan pengembang. Dalam dunia digital yang semakin kompetitif, situs web tidak hanya harus menarik secara visual, tetapi juga harus berfungsi dengan efisien dan menawarkan pengalaman pengguna yang luar biasa. Bagaimana kita bisa mencapai keseimbangan ini?
+            <br>
+            <br>
+            Estetika: Daya Tarik Pertama yang Menentukan
+            Desain adalah hal pertama yang dilihat pengguna saat mereka mengunjungi sebuah situs web. Warna, tipografi, gambar, dan tata letak semuanya berkontribusi untuk menciptakan kesan pertama yang kuat. Desain yang menarik dapat membuat pengguna merasa tertarik dan ingin menjelajahi lebih jauh.
+            <br>
+            <br>
+            Namun, estetika yang hebat tidak hanya soal tampilan yang cantik. Desain juga harus mencerminkan brand identity dan berkomunikasi dengan jelas kepada audiens. Misalnya, pilihan warna dan font harus sesuai dengan pesan yang ingin disampaikan oleh situs tersebut. Hal ini menciptakan konsistensi yang memperkuat brand dan meningkatkan daya ingat pengguna.
+            <br>
+            <br>
+            Fungsionalitas: Esensi dari Pengalaman Pengguna
+            Di balik layar, kode adalah tulang punggung dari setiap elemen yang dilihat pengguna. Kode yang bersih, efisien, dan terstruktur dengan baik memastikan bahwa situs web berfungsi sebagaimana mestinya. Kecepatan muat halaman, responsivitas, dan navigasi yang intuitif semuanya bergantung pada kualitas kode.
+            <br>
+            <br>
+            Selain itu, fungsionalitas yang baik juga berarti situs tersebut mudah diakses oleh semua pengguna, termasuk mereka yang memiliki kebutuhan khusus. Penggunaan kode yang sesuai dengan standar aksesibilitas, seperti ARIA (Accessible Rich Internet Applications), membantu memastikan bahwa situs dapat diakses oleh pengguna dengan berbagai kemampuan.
+            <br>
+            <br>
+            Tantangan dalam Menyeimbangkan Keduanya
+            Salah satu tantangan terbesar dalam pengembangan web adalah menemukan keseimbangan yang tepat antara desain dan kode. Terlalu fokus pada desain bisa menyebabkan masalah kinerja, seperti waktu muat yang lama atau tata letak yang rumit untuk dinavigasi. Sebaliknya, terlalu fokus pada fungsionalitas dapat menghasilkan situs yang efisien tetapi tidak menarik secara visual.
+            <br>
+            <br>
+            Solusinya adalah kolaborasi yang erat antara desainer dan pengembang. Desainer harus memahami batasan teknis yang dihadapi oleh pengembang, sementara pengembang harus menghargai visi estetika yang diusung oleh desainer. Dengan bekerja bersama, keduanya dapat menciptakan solusi yang tidak hanya terlihat bagus tetapi juga berfungsi dengan baik.
+            <br>
+            <br>
+            Pendekatan Terintegrasi: Desain yang Didukung Kode
+            Pendekatan terintegrasi adalah kunci untuk menyeimbangkan desain dan kode. Ini berarti bahwa proses desain dan pengembangan harus dilakukan secara paralel, bukan secara terpisah. Misalnya, saat mendesain antarmuka pengguna, desainer harus memikirkan bagaimana elemen-elemen tersebut akan diimplementasikan dalam kode. Sebaliknya, pengembang harus terlibat dalam proses desain untuk memastikan bahwa ide-ide kreatif dapat diimplementasikan dengan cara yang efisien.
+            <br>
+            <br>
+            Penggunaan alat-alat kolaborasi, seperti Figma untuk desain dan GitHub untuk kode, dapat membantu memfasilitasi komunikasi antara tim desain dan pengembangan. Alat-alat ini memungkinkan desainer dan pengembang untuk bekerja pada proyek yang sama secara real-time, memberikan umpan balik, dan melakukan perubahan tanpa kehilangan alur kerja.
+            <br>
+            <br>
+            Kesimpulan: Mencapai Harmoni dalam Pengembangan Web
+            Pada akhirnya, keseimbangan antara desain dan kode adalah tentang menciptakan harmoni. Situs web yang ideal adalah yang tidak hanya memikat secara visual tetapi juga cepat, responsif, dan mudah digunakan. Dengan menggabungkan estetika dan fungsionalitas, kita dapat menciptakan pengalaman pengguna yang mengesankan dan efektif.
+            <br>
+            <br>
+            Dalam dunia yang terus berkembang ini, di mana tuntutan pengguna semakin tinggi, kemampuan untuk menyeimbangkan desain dan kode menjadi keterampilan yang tak ternilai. Dengan terus belajar dan beradaptasi, kita bisa menciptakan situs web yang tidak hanya memenuhi harapan tetapi juga melampauinya.</p>
+    </article>
+
+    <div class="interaction">
+        <div class="like-unlike">
+            <button id="like-btn"><i class="fas fa-thumbs-up"></i></button>
+            <span id="like-count">0</span>
+            <button id="unlike-btn"><i class="fas fa-thumbs-down"></i></button>
+            <span id="unlike-count">0</span>
+        </div>
+    </div>
+
+    <section id="comments">
+        <h2>Komentar</h2>
+        <div class="comment-box">
+            <textarea id="comment-text" placeholder="Tambahkan komentar..."></textarea>
+            <button id="submit-comment"><i class="fas fa-paper-plane"></i> Kirim</button>
+        </div>
+        <div id="comment-section">
+            <!-- Komentar ditampilkan di sini -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Kreatif Koder. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
