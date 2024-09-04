@@ -1,0 +1,193 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0D0D0D;
+    color: #E0E0E0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #151515;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    color: #00FFD1;
+}
+
+.logo span {
+    color: #00BFFF;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #E0E0E0;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00BFFF;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('crypto-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: #FFF;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.cta {
+    background-color: #00BFFF;
+    color: #FFF;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+.cta:hover {
+    background-color: #00FFD1;
+}
+
+/* Main Content Area */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+}
+
+.blog-posts {
+    flex: 3;
+}
+
+.post {
+    background-color: #151515;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.post h2 {
+    color: #00BFFF;
+}
+
+.post p {
+    margin: 10px 0;
+}
+
+.read-more {
+    color: #00FFD1;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.profile {
+    background-color: #151515;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.categories, .recent-posts {
+    background-color: #151515;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.categories h4, .recent-posts h4 {
+    color: #00BFFF;
+    margin-bottom: 10px;
+}
+
+.categories ul, .recent-posts ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.categories ul li, .recent-posts ul li {
+    margin-bottom: 10px;
+}
+
+.categories ul li a, .recent-posts ul li a {
+    color: #E0E0E0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.categories ul li a:hover, .recent-posts ul li a:hover {
+    color: #00FFD1;
+}
+
+/* Footer */
+footer {
+    background-color: #151515;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.social-media a {
+    color: #E0E0E0;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #00FFD1;
+}
