@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Graphic Designer Portfolio</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        /* Navbar */
+        nav {
+            background-color: #222;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        /* p{
+            color: #222;
+        }
+        h1{
+            color: #555;
+        } */
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('Leonardo_Phoenix_A_modern_sleek_depiction_of_a_frontend_develo_0.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            text-shadow: 1px 1px black;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .hero a {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero a:hover {
+            background-color: #0056b3;
+        }
+
+        /* About Section */
+        .about {
+            padding: 4rem 2rem;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 2.5rem;
+            color: #222;
+        }
+
+        .about p {
+            font-size: 1rem;
+            margin-top: 20px;
+            color: #555;
+        }
+
+        /* Portfolio Section */
+        .portfolio {
+            padding: 4rem 2rem;
+            background-color: #f4f4f9;
+        }
+
+        .portfolio h2 {
+            text-align: center;
+            color: #222;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .portfolio-item {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .portfolio-item h3 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 20px;
+            display: none;
+            font-size: 1.5rem;
+        }
+
+        .portfolio-item:hover h3 {
+            display: block;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 4rem 2rem;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 2.5rem;
+            color: #222;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            <a href="https://dwinanta.github.io/portofolio/">My Portfolio</a>
+        </div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div>
+            <h1>Hello, I'm a Graphic Designer</h1>
+            <p>Crafting Visual Experiences with Creativity & Expertise</p>
+            <a href="#portfolio">See My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>I'm a passionate graphic designer with 1 year of experience in creating visual content that communicates ideas, engages audiences, and makes a lasting impression. My expertise spans logo design, branding, illustrations, and digital artwork.</p>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <h2>My Work</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="WhatsApp Image 2024-07-21 at 19.50.52_43adc97c.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Logo Creation</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="Leonardo_Phoenix_A_modern_dualscene_illustration_showing_the_b_1.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>Coding Website</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="Leonardo_Phoenix_Design_a_modern_and_sleek_frontend_developer_2.jpg" alt="Project 3">
+                <h3>Project 3</h3>
+                <p>UI/UX Website Design</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Your Name | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
